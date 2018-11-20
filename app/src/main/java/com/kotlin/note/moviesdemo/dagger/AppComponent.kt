@@ -3,6 +3,7 @@ package com.kotlin.note.moviesdemo.dagger
 import dagger.Component
 
 @AppScope
-@Component
+@Component(modules = [AppModule::class])
 interface AppComponent {
+    fun createNetworkComponent(): NetworkComponent
 }

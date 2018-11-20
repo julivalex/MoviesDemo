@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface ApiMovies {
 
-    @GET(value = "/filippella/Sample-API-Files/master/json/movies-api.json")
+    @GET(value = Url.EXTENSION)
     fun getMovies() : Observable<MovieResponse>
 }
